@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="pages/contact.css">
 </head>
 <body>
-    <h1>Hello WOld</h1>
+
+    <!-- Nav -->
+    <div class="nav-div">
+        <div class="nav">
+
+            <div class="logo">
+                <img src="assets/logo.png" alt="logo">
+            </div>
+
+            <div class="links">
+                <a href="pages/services.html" ><li>Services</li></a>
+                <li>Clients</li>
+            </div>
+
+            <div id="menu-links" class="menu-links">
+                <li>Services</li>
+                <li>Clients</li>
+                <span onclick="togleDiv()">&times;</span>
+            </div>
+
+            <div class="hamburger">
+                <span onclick="togleDiv()">&#9776;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome message -->
+    <div class="heading">
+        <h1>Welcome to Grown</h1>
+    </div>
+
+     <!-- Video div -->
+    <div class="video">
+
+        <video autoplay controls loop src="assets/introduction.mp4">
+
+        </video>
+
+    </div>
+
+    <!-- contact section  -->
+    <div class="contact-section">
+        <div class="contact-buttons">
+            <a href="https://wa.me/919391427533?text=My%20business%20needs%20your%20services.%20What%20times%20work%20best%20for%20you%20to%20discuss?" class="button WhatsApp" target="_blank">WhatsApp</a>
+            <a href="tel:+919391427533" class="button">Call</a>
+        </div>
+    </div>
+    <br/>
+    <br>
+    
+
+    <!-- Clients review -->
+
+    <h1 class="clients-heading"> Clients</h1>
+
+    <div class="review-div">
+        <div class="review">
+
+            <div class="img">
+                <img src="assets/clients/tea_lovers.jpg" alt="tea lovers"/>
+            </div>
+
+            <div class="info">
+                <div class="header">
+                    <h2>Teal Lovers</h2>
+                    <p> MIG phase 2 , Rd no 14</p>
+                </div>
+                <div class="main">
+                    <p>Updated full Google business profile with new images , Added products , Created a direct review link with Scan Paper</p>
+                </div>
+                <div class="link">
+                    <a href="https://maps.app.goo.gl/TYKSohcYpwq9kTNcA">
+                        <button> See Our work </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="left-right">
+            <span>&larr;</span>
+            <span>&rarr;</span>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
